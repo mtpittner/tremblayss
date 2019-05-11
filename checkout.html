@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+
+<meta name="description" content="Located in Hayward, Wisconsin...Home of the original homemade fudge and the world famous turtles. We offer a large selection of both homemade and olde time favorites, located in Hayward, Wisconsin. " />
+<meta name="keywords" content="original, famous, selection, candy, homemade, homemade candies, Tremblay's, Hayward, Hayward WI, best candy, fudge, taffy, brittle, cashew, world, famous turtles, turtles, caramel, vanilla, dark, chocolate, chocolate, peanut, butter, wrapped, ">
+<title>Welcome to Tremblay's Sweet Shop</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<!-- <script>
+			//Toggle for width display
+			var showWidth = 1;
+
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();
+					});
+				});
+			}
+</script> -->
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/sebackground2.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+input[type="number"] {
+            width: 50px;
+}
+
+#nav {
+	position:absolute;
+	margin-top:150px;
+}
+
+#nav li a:hover{
+	color:#efe2cf;
+}
+
+#orderdetails{
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.detailscontainer {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+::placeholder{
+	opacity:0.2;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 30px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+<div id="output_width"></div>
+
+<div id="pagecontainer">
+	<header class="mainheader">
+	  <a href="index.html"><img id="logo" src="images/logo.png" alt="Tremblay's Sweet Shop logo" /></a>
+       <div id="callUs"><p>Call us today or order online! <br> 715-634-2785 or  1-800 40-FUDGE  <br> Orders are shipped promptly. </p></div>
+
+      <nav id="nav">
+		<label for="show-menu" class="show-menu"><img src="images/menu-icon.png" alt="Show Menu button" /></label>
+		<input type="checkbox" id="show-menu" name="button">
+			<ul id="menu">
+				<li><a href="index.html">home</a></li>
+				<li><a class="active" href="homemadecandies.html">homemade candies</a></li>
+				<li><a href="oldetymecandies.html">olde-tyme candies</a></li>
+				<li><a href="history.html">history</a></li>
+				<li><a href="specialevents.html">special events</a></li>
+				<li><a href="contact.html">contact us</a></li>
+			</ul>
+      </nav>
+
+   </header>
+
+
+
+
+
+
+<!---------------------------- CHECKOUT page--------------------------------->
+
+
+      <div class="container">
+        <div class="hccandylabel stroke">Tremblay's Secure Checkout</div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="upload" value="1">
+            <input type="hidden" name="business" value="seller@dezignerfotos.com">
+            <table class="table table-hover">
+              <table class="table table-hover">
+          <thead class="thead-inverse">
+              <tr>
+      <th>Remove</th>
+                  <th>Qty</th>
+                  <th>Item Name</th>
+                  <th>Cost</th>
+                  <th class="text-xs-right">Subtotal</th>
+              </tr>
+          </thead>
+          <tbody id="output"> </tbody>
+            </table>
+            <input type="submit" class="btn btn-primary btn-block" value="Checkout with PayPal"> <a href="products.html" class="btn btn-danger btn-block">Continue Shopping</a> </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<br>
+	<br>
+
+		<!--<div id="orderdetails">
+			<h3>Shipping & billing details</h3>
+
+					<div class="row">
+					  <div class="col-75">
+						<div class="detailscontainer">
+						  <form action="confirmation.php" method="post">
+
+							<div class="row">
+							  <div class="col-50">
+								<h5>Billing Information</h5>
+								<label for="fname"><!-- <i class="fa fa-user"></i> --> <!--Full Name</label>
+								<input type="text" id="fname" name="firstname" placeholder="John M. Doe" />
+								<label for="email"><!-- <i class="fa fa-envelope"></i> --><!-- Email</label>
+								<input type="text" id="email" name="email" placeholder="john@example.com" />
+								<label for="phone"><!-- <i class="fa fa-envelope"></i> --><!-- Phone Number</label>
+								<input type="text" id="phone" name="phone" placeholder="xxxxxxxxxx" />
+								<label for="adr"><!-- <i class="fa fa-address-card-o"></i> --><!-- Address</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street" />
+								<label for="city"><!-- <i class="fa fa-institution"></i> --> <!--City</label>
+								<input type="text" id="city" name="city" placeholder="New York" />-->
+
+								<!--<div class="row">
+								  <div class="col-50">
+									<label for="state">State</label>
+									<input type="text" id="state" name="state" placeholder="NY" />
+								  </div>
+								  <div class="col-50">
+									<label for="zip">Zip</label>
+									<input type="text" id="zip" name="zip" placeholder="10001" />
+								  </div>
+								</div>
+							  </div>
+							<!-- </div> -->
+
+							<!-- <div class="row"> -->
+							<!--  <div class="col-50">
+								<h5>Payment Information</h5>
+								<label for="fname">Accepted Cards</label>
+								<div class="icon-container">
+								  <i class="fa fa-cc-visa" style="color:navy;"></i>
+								  <i class="fa fa-cc-amex" style="color:blue;"></i>
+								  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+								  <i class="fa fa-cc-discover" style="color:orange;"></i>
+								</div>
+								<label for="cname">Name on Card</label>
+								<input type="text" id="cname" name="cardname" placeholder="John Doe">
+								<label for="ccnum">Credit Card number</label>
+								<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+								<label for="expmonth">Exp Date</label>
+								<input type="text" id="expdate" name="expdate" placeholder="1018">
+								<div class="row">
+								  <div class="col-50">
+									<label for="cvv">CVV</label>
+									<input type="text" id="cvv" name="cvv" placeholder="352">
+								  </div>
+								</div>
+							  </div>
+							</div>
+
+							 <!-- <label>
+								<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+							</label> -->
+							<!--	<input type="submit" value="Process Order" class="btn btn-primary btn-block">-->
+						  </form>
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+	 <footer>
+  			<div class="footerlogo"><img src="images/footerlogo.png" /></div>
+  			<nav class="footer-nav">
+            	<ul>
+         			<li><a href="index.html">Home <span> | </span></a></li>
+            		<li><a href="homemadecandies.html">Homemade Candies <span> | </span></a></li>
+            		<li><a href="oldetymecandies.html">Olde-Tyme Candies <span> | </span></a></li>
+                    <li><a href="history.html">History<span> | </span></a></li>
+            		<li><a href="specialevents.html">Special Events <span> | </span></a></li>
+            		<li><a href="contact.html">Contact Us</a></li>
+		 		</ul>
+            </nav>
+             <div class="address"><p>Tremblay's Sweet Shop - 10569 Main Street, Hayward, WI 54843 <span> | </span>Phone - 715-634-2785</p></div>
+
+  			 <div class="email-link"><p>Website by<a href="mailto: mtpittner@gmail.com"> mtpittner@gmail.com</a>. &copy; 2017 - 2018 - Tremblay's Sweet Shop. All rights reserved.</p></div>
+
+	</footer>
+</div>
+
+    <script>
+        var shopcart = [];
+        $(document).ready(function () {
+		    $("#submitBtn").click(function() {
+					var $str = "Ftstesting:Testing!123456789123";
+					var $enc = window.btoa($str);
+					console.log("yes"+$enc);
+					$.ajax({
+						url: "https://fts.cardconnect.com:6443/cardconnect/rest/auth",
+						headers: {"Authorization" : "Basic "+ $enc ,
+								  "Content-Type":"application/json" },
+						type: 'PUT',
+						data: JSON.stringify({ "merchid": "800000000803", "amount": "0", "expiry": "1218", "account": "4111111111111111" }),
+					}).then(function(data) {
+						console.log(data);
+						console.log(data.respstat)
+					   $('.respstat').append(data.respstat);
+					});
+			});
+            outputCart();
+
+			$('#output').on('click','.remove-item',function(){
+				var itemInfo = $(this.dataset)[0];
+				var itemToDelete = $('.remove-item').index(this);
+				shopcart.splice(itemToDelete,1);
+				sessionStorage["sca"] = JSON.stringify(shopcart);
+				outputCart();
+			})
+
+
+            $('#output').on('change', '.dynqua', function () {
+                var iteminfo = $(this.dataset)[0];
+                var itemincart = false;
+				var removeItem = false;
+				var itemToDelete = 0;
+                console.log(shopcart);
+                var qty = $(this).val();
+
+                $.each(shopcart, function (index, value) {
+                    if (value.id == iteminfo.id) {
+						if(qty <= 0) {
+							removeItem = true;
+							itemToDelete = index;
+
+						}else{
+							shopcart[index].qty = qty;
+							itemincart = true;
+						}
+
+                    }
+                })
+				if(removeItem){
+					shopcart.splice(itemToDelete, 1);
+				}
+
+                sessionStorage["sca"] = JSON.stringify(shopcart);
+                outputCart();
+            })
+
+         function outputCart() {
+                if (sessionStorage["sca"] != null) {
+                    shopcart = JSON.parse(sessionStorage["sca"].toString());
+                }
+                //console.log(sessionStorage["sca"]);
+                //console.log(shopcart);
+				$('#checkoutdiv').show();
+
+                var holderHTML = '';
+                var total = 0;
+                var itemCnt = 0;
+				var taxRate = 0.055;
+                var shipcost = 0;
+
+                $.each(shopcart, function (index, value) {
+                    var stotal = value.qty * value.price;
+                    var a = (index + 1);
+                    total += stotal;
+                    itemCnt += parseInt(value.qty);
+
+						if (itemCnt <= 3) {
+							shipcost = 800;
+						}else{
+							shipcost = 950;
+						}
+					console.log(value.flavor);
+					 if((typeof value.flavor) !== 'undefined'){
+                    holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + value.name + ' - ' + value.flavor  + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal);
+					}
+					else{
+						holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + value.name + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal);
+					}
+                })
+
+				/* Calculate Totals */
+				var tax = total * taxRate;
+			<!-- 	var shipping = value.qty + 5.5; -->
+                holderHTML += '<tr><td colspan="4" class="text-xs-right">Subtotal</td><td class="text-xs-right">$' + formatMoney(total) + '</td></tr><tr><td colspan="4" class="text-xs-right">Tax</td><td class="text-xs-right">$' + formatMoney(tax) +'</td></tr><tr><td colspan="4" class="text-xs-right">S&H</td><td class="text-xs-right">$' + formatMoney(shipcost) + '</td></tr><tr><td colspan="4" class="text-xs-right">Total</td><td class="text-xs-right">$' + formatMoney(total+shipcost) + '</td></tr>';
+                $('#output').html(holderHTML);
+            }
+
+            function formatMoney(n) {
+                return (n / 100).toFixed(2);
+            }
+        })
+    </script>
+</div>
+</body>
+</html>

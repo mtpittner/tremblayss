@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+#oc_wrapper {
+	background-color: #D8D8D8;
+	height: 2284px;
+	width: 960px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+#oc_taffypics {
+	display: block;
+	height: 329px;
+	width: 501px;
+	position: relative;
+	float: left;
+	top: 50px;
+	left: 230px;
+	
+}
+
+#oc_taffylogo {
+	display: block;
+	float: left;
+	height: 65px;
+	width: 101px;
+	top: 50px;
+	position: relative;
+	left: 50px;
+}
+#oc_taffytext {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: none;
+	color: #131313;
+	display: inline;
+	position: relative;
+	width: 850px;
+	height: 85px;
+	font-size: 20px;
+	background-color: #D8D8D8;
+	float: left;
+	left: 50px;
+	top: 55px;
+}
+
+
+#oc_taffy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	display: block;
+	height: 45px;
+	width: 600px;
+	position: relative;
+	float: left;
+	background-position: center center;
+	left: 250px;
+	color: #960509;
+	top: 50px;
+}
+
+#oc_ttlogo {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 167px;
+	width: 250px;
+	position: absolute;
+	display: block;
+	left: 88px;
+	text-align: center;
+	top: 15px;
+}
+
+#oc_tttext {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 72px;
+	width: 706px;
+	position: absolute;
+	display: block;
+	left: 74px;
+	text-align: center;
+	top: 10px;
+	font-size: 20px;
+}
+
+#oc_jellypics {
+	display: block;
+	height: 329px;
+	width: 501px;
+	position: relative;
+	float: left;
+	top: 115px;
+	left: -225px;
+}
+
+#oc_taffylogo {
+	display: block;
+	float: left;
+	height: 65px;
+	width: 101px;
+	top: 50px;
+	position: relative;
+	left: 50px;
+}
+
+#oc_jellytext {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: none;
+	color: #131313;
+	display: inline;
+	position: relative;
+	width: 530px;
+	height: 115px;
+	font-size: 30px;
+	background-color: #D8D8D8;
+	float: left;
+	left: 230px;
+	top: 120px;
+	text-align: center;
+}
+
+
+
+#oc_jellies {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	display: block;
+	height: 45px;
+	width: 450px;
+	position: relative;
+	float: left;
+	background-position: center center;
+	left: 320px;
+	color: #A20608;
+	top: 70px;
+	letter-spacing: -1pt;
+}
+
+#oc_ttlogo {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 167px;
+	width: 250px;
+	position: absolute;
+	display: block;
+	left: 88px;
+	text-align: center;
+	top: 15px;
+}
+
+#oc_jtext {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100px;
+	width: 525px;
+	position: absolute;
+	display: block;
+	left: 4px;
+	text-align: center;
+	top: 0px;
+	font-size: 20px;
+}
+
+#oc_wrappedpics {
+	display: block;
+	height: 329px;
+	width: 501px;
+	position: relative;
+	float: left;
+	top: 115px;
+	left: 230px;
+}
+
+#oc_wrapped {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	display: block;
+	height: 50px;
+	width: 700px;
+	position: relative;
+	float: left;
+	background-position: center center;
+	left: 225px;
+	color: #960509;
+	top: 115px;
+	letter-spacing: -1pt;
+}
+
+#oc_wrappedtext {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: none;
+	color: #131313;
+	display: inline;
+	position: relative;
+	width: 710px;
+	height: 130px;
+	font-size: 20px;
+	background-color: #D8D8D8;
+	float: left;
+	left: 150px;
+	top: 120px;
+}
+
+#oc_wtext {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 124px;
+	width: 706px;
+	position: absolute;
+	display: block;
+	left: 3px;
+	text-align: center;
+	top: 0px;
+	font-size: 20px;
+}
+
+#oc_jarpics {
+	display: block;
+	height: 329px;
+	width: 501px;
+	position: relative;
+	float: left;
+	left: 125px;
+	top: 550px;
+	border: 3px inset #000;
+}
+
+#oc_jar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	display: block;
+	height: 50px;
+	width: 300px;
+	position: relative;
+	float: left;
+	background-position: center center;
+	left: 390px;
+	color: #A20608;
+	top: 500px;
+}
+
+#oc_jartext {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: none;
+	color: #131313;
+	display: inline;
+	position: relative;
+	width: 850px;
+	height: 200px;
+	font-size: 20px;
+	background-color: #D8D8D8;
+	float: left;
+	left: 50px;
+	top: 500px;
+}
+
+#oc_jar2text {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 191px;
+	width: 783px;
+	position: absolute;
+	display: block;
+	left: 18px;
+	text-align: center;
+	top: 8px;
+	font-size: 30px;
+}
+
+#oc_kidspics {
+	display: block;
+	height: 329px;
+	width: 501px;
+	position: relative;
+	float: left;
+	left: 230px;
+	top: 125px;
+	border: 3px inset #000;
+}
+
+
+#oc_mailorder {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	display: block;
+	float: left;
+	height: 85px;
+	width: 700px;
+	position: relative;
+	left: 155px;
+	text-align: center;
+	top: 155px;
+	color: #960509;
+	letter-spacing: -1pt;
+}
+
+#oc_footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-image: url(images/footerbackbrg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 60px;
+	width: 960px;
+	position: relative;
+	text-align: center;
+	float: left;
+	top: 200px;
+}
+
+#oc_design_footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	background-color: #D8D8D8;
+	display: block;
+	float: left;
+	height: 15px;
+	width: 960px;
+	position: relative;
+	top: 200px;
+	text-align: center;
+}
+
+.otc_links {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	cursor:pointer;
+	color: #000;
+}

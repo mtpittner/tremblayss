@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tremblay's Sweet Shop - Shop Homemade Candies</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous" />
+	
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	
+    <style>
+	
+	body {
+	background-color: #FFFFFF;
+	background-image: url(images/hcbackground.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size:1rem;
+}
+
+.shoppage {
+	margin-top:-5%;
+}
+        #output {
+            clear: both;
+        }
+        
+        #checkoutdiv {
+            display: none;
+        }
+        
+		
+		.bdr {
+			outline: 1.75px solid #333;	
+				-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		}
+		
+		.bdr2{
+			outline: 1.75px solid #333;					
+		}
+		
+		body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h5,h6 {
+	text:center;
+}
+
+label {
+    font-size: .7rem;
+    padding-right: 5px;
+}
+
+select {
+    font-size: .7rem;
+    padding: 2px 5px;
+	margin-bottom:4px;
+}
+
+#nav {
+	position:absolute;
+	margin-top:150px;
+}
+
+#nav li a:hover{
+	color:#efe2cf;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+	<div id="pagecontainer">
+		<header class="mainheader">   
+			<a href="index.html"><img id="logo" src="images/logo.png" alt="Tremblay's Sweet Shop logo" /></a>
+			<div id="callUs"><p>Call us today or order online! <br> 715-634-2785 or  1-800 40-FUDGE  <br> Mail orders are shipped promptly. </p></div> 
+		   
+			<nav id="nav"> 
+				<label for="show-menu" class="show-menu"><img src="images/menu-icon.png" alt="Show Menu button" /></label>
+				<input type="checkbox" id="show-menu" name="button">
+					<ul id="menu">
+						<li><a href="index.html">home</a></li>
+						<li><a class="active" href="homemadecandies.html">homemade candies</a></li>
+						<li><a href="oldetymecandies.html">olde-tyme candies</a></li>
+						<li><a href="ourstory.html">our story</a></li>
+						<li><a href="specialevents.html">special events</a></li>
+						<li><a href="contact.html">contact us</a></li>
+					</ul>
+			</nav>         
+		</header>
+
+    <div class="content">
+        <!-- content changes on each page -->
+        <div class="container">
+		
+		 <div class="htop">
+            <div id="checkoutdiv " class="container">
+                <div class="row">
+                    <div class="col-md-6 text-xs-right ">(<span class="items text-muted"></span> <small>items</small>) <span class="total"></span> </div>
+                    <div class="col-md-6 text-xs-right"> <span class="btn btn-danger" data-toggle="modal" data-target="#cart">Open Shopping Cart</span><a href="checkout.html" class="btn btn-primary">Proceed to checkout</a></div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card bdr"><a id="afudge"></a>
+							<img src="images/chocofudge.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title style="font-size:75%;">Chocolate Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$7.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Fudge" data-s="1 lb. box" data-price="799" data-id="1">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/vanilla.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Vanilla Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$7.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Vanilla Fudge" data-s="1 lb. box" data-price="799" data-id="2">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/maple.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Maple Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$7.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Maple Fudge" data-s="1 lb. box" data-price="799" data-id="3">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			
+			</div>
+		
+		    <div class="row"> 
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/peanutbutter.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Peanut Butter Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$7.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Peanut Butter Fudge" data-s="1 lb. box" data-price="799" data-id="4">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/chocolatepeanutbutter.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Peanut Butter Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$7.99 per pound<br><br></h6>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Peanut Butter Fudge" data-s="1 lb. box" data-price="799" data-id="5">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/chocolatenut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$9.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Nut Fudge" data-s="1 lb. box" data-price="999" data-id="6">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				 
+			</div>
+			
+			
+			<div class="row">  
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/vanillanut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Vanilla Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$9.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Vanilla Nut Fudge" data-s="1 lb. box" data-price="999" data-id="7">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/maplenut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Maple Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$14.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Maple Nut Fudge" data-s="1 lb. box" data-price="999" data-id="8">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/peanutbutternut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Peanut Butter Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$9.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Peanut Butter Nut Fudge" data-s="1 lb. box" data-price="999" data-id="9">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>
+			<div class="row"> 
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/chocopeanutbutternut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Chocolate Peanut Butter Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$9.99 per pound<br><br></h6>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Peanut Butter Nut Fudge" data-s="1 lb. box" data-price="999" data-id="10">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/dkchocolate.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Dark Chocolate Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$14.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Dark Chocolate Fudge" data-s="1 lb. box" data-price="1499" data-id="11">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/dkchocolatenut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Dark Chocolate Nut Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$14.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Peanut Butter Nut Fudge" data-s="1 lb. box" data-price="1499" data-id="12">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>	
+					
+				
+		    <div class="row"> 
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/seasaltturtlefudge.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Sea Salt Turtle Fudge</h5>
+							 <h6 class="card-subtitle text-muted small">$14.99 per pound<br><br></h6><br>
+                            <div class="card-text"><a href="#" class="card-link productItem btn btn-danger" data-name="Sea Salt Turtle Fudge" data-s="1 lb. box" data-price="1499" data-id="13">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bdr"><a id="aturtles"></a>
+							<img src="images/turtles2.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">World Famous Turtles</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="turtles1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>											
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="World Famous Turtles" data-s="1 lb. box" data-price="1599" data-id="14">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="adipped"></a>
+							<img src="images/chocolatefudgeballs.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Chocolate Fudge Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="fudgeballs1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>											
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Fudge Balls" data-s="1 lb. box" data-price="1599" data-id="15">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="row"> 				
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="adipped"></a>
+							<img src="images/pbfudgeballs.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Chocolate Peanut Butter Fudge Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="fudgeballs1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Cocolate">Dark Chocolate</option>											
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Peanut Butter Fudge Balls" data-s="1 lb. box" data-price="1599" data-id="16">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="adipped"></a>
+							<img src="images/vanillafudgeballs.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Vanilla Fudge Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6><br>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="fudgeballs1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>											
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Vanilla Fudge Balls" data-s="1 lb. box" data-price="1599" data-id="17">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/seasaltcaramelballs.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Sea Salt Caramel Fudge Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+							<div class="selectopt">
+									
+									<select id="fudgeballs"  onchange="setFlavor(this)">
+												<option value="">What's your flavor?</option>
+												<option value="Milk Chocolate">Milk Chocolate</option>
+												<option value="Dark Chocolate">Dark Chocolate</option>
+											</select>
+										
+									
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Sea Salt Caramel Fudge Balls" data-s="1 lb. box" data-price="1599" data-id="18">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="row"> 
+				
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/mintballs.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Mint Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+									<div class="selectopt">
+										<select id="pclusters1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>											
+											<option value="Dark Chocolate">Dark Chocolate</option>										
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Mint Balls" data-s="1 lb. box" data-price="1599" data-id="19">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/toastedcoconut.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Coconut Balls</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="coconutballs1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Toasted Coconut">Toasted Coconut</option>
+											<option value="Coconut Cream">Coconut Cream</option>
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Coconut Balls" data-s="1 lb. box" data-price="1599" data-id="20">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/oreodelights.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Oreo Cookie Delights</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+							<div class="selectopt">
+								
+										<select id="oreocookie1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Oreo Cookie Delights" data-s="1 lb. box" data-price="1599" data-id="21">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="row"> 				
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/chocolatecoveredoreos.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Covered Oreos</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+									<div class="selectopt">
+										<select id="chocooreos1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Covered Oreos" data-s="1 lb. box" data-price="1599" data-id="22">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>             
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/toastedcoconuthaystacks.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Haystacks</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="haystacks1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Haystacks" data-s="1 lb. box" data-price="1599" data-id="23">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/seamonsters.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Sea Monsters</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+							<div class="selectopt">
+								
+										<select id="seamonster1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Sea Monsters" data-s="1 lb. box" data-price="1599" data-id="24">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>	
+
+			<div class="row"> 
+                <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/englishtoffee.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">English Toffee</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+									<div class="selectopt">
+										<select id="toffee1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="English Toffee" data-s="1 lb. box" data-price="1599" data-id="25">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/chocolatepretzals.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title mx-auto">Chocolate Pretzals</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text">
+								<div class="selectopt">
+								
+										<select id="pretzals1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+											<option value="White Chocolate">White Chocolate</option>
+										</select>
+							</div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Covered Pretzals" data-s="1 lb. box" data-price="1599" data-id="26">Add to Cart</a> </div>						
+						</div>
+                    </div>
+				</div>
+				<div class="col-sm-4">
+						<div class="card bdr">
+								<img src="images/smores.png" class="img-fluid"> 
+							<div class="card-block">
+								 <h5 class="card-title mx-auto">Smores</h5>
+								 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6><br>
+								<div class="card-text">								
+								<a href="#" class="card-link productItem btn btn-danger" data-name="Smores" data-s="1 lb. box" data-price="1599" data-id="27">Add to Cart</a> </div>						
+							</div>
+						</div>
+				</div>	
+             </div>					
+				
+			<div class="row"> 
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/almondnutclusters.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Almond Nut Clusters</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text"> <span class="sugarfree">Also comes in Sugar-Free!</span><br>
+									<div class="selectopt">
+										<select id="almondclusters1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Sugar Free Milk Chocolate">Sugarfree Milk Chocolate</option>
+											<option value="White Chocolate">White Chocolate</option>
+											<option value="Sugar Free Dark Chocolate">Sugarfree Dark Chocolate</option>
+											
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Almond Clusters" data-s="1 lb. box" data-price="1599" data-id="28">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>			
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/pecannutclusters.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Pecan Nut Clusters</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text"> <span class="sugarfree">Also comes in Sugar-Free!</span><br>
+									<div class="selectopt">
+										<select id="pecanclusters1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Sugar Free Milk Chocolate">Sugarfree Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+											<option value="Sugar Free Dark Chocolate">Sugarfree Dark Chocolate</option>											
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolate Pecan Nut Clusters" data-s="1 lb. box" data-price="1599" data-id="29">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/peanutclusters2.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Peanut Clusters</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6><br>
+                            <div class="card-text"> <span class="sugarfree">Also comes in Sugar-Free!</span><br>
+									<div class="selectopt">
+										<select id="pclusters1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Sugar Free Milk Chocolate">Sugarfree Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+											<option value="Sugar Free Dark Chocolate">Sugarfree Dark Chocolate</option>											
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Chocolat Peanut Clusters" data-s="1 lb. box" data-price="1599" data-id="30">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="row"> 			
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/cashewnutclusters.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Chocolate Cashew Nut Clusters</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text"> <span class="sugarfree">Also comes in Sugar-Free!</span><br>
+									<div class="selectopt">
+										<select id="cashewclusters1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Milk Chocolate">Milk Chocolate</option>
+											<option value="Sugar Free Milk Chocolate">Sugarfree Milk Chocolate</option>
+											<option value="Dark Chocolate">Dark Chocolate</option>
+											<option value="Sugar Free Dark Chocolate">Sugarfree Dark Chocolate</option>											
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name=" Chocolate Cashew Nut Clusters" data-s="1 lb. box" data-price="1599" data-id="31">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="abrittle"></a>
+							<img src="images/peanutbrittle.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Peanut Brittle</h5>
+							 <h6 class="card-subtitle text-muted small">$8.99 per pound<br><br></h6><br><br>
+                            <div class="card-text"><br>	</div>								
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Peanut Brittle" data-s="1 lb. box" data-price="899" data-id="32">Add to Cart</a> </div>						
+						</div>
+                    </div>
+					
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="abrittle"></a>
+							<img src="images/cashewbrittle.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Cashew Brittle</h5>
+							 <h6 class="card-subtitle text-muted small">$9.99 per pound<br><br></h6><br><br>
+                            <div class="card-text"><br>	</div>								
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Cashew Brittle" data-s="1 lb. box" data-price="999" data-id="33">Add to Cart</a> </div>						
+						</div>
+                </div>
+			</div>				
+			
+			<div class="row">  				
+				<div class="col-sm-4">
+                    <div class="card bdr"><a id="aabark"></a>
+							<img src="images/almondbark2.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Almond Bark</h5>
+							 <h6 class="card-subtitle text-muted small">$8.99 per pound<br></h6>
+                            <div class="card-text"> <span class="sugarfree">Also comes in Sugar-Free!</span>
+									<div class="selectopt">
+										<select id="abark1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Chocolate">Chocolate</option>
+											<option value="Sugar Free Chocolate">Sugarfree Chocolate</option>
+											<option value="Vanilla">Vanilla</option>
+											<option value="Sugar Free Vanilla">Sugarfree Vanilla</option>
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Almond Bark" data-s="1 lb. box" data-price="899" data-id="34">Add to Cart</a> </div>						
+						</div>
+                    </div>
+				</div>
+				<div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/nutlog.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Nut Logs</h5>
+							 <h6 class="card-subtitle text-muted small">$15.99 per pound<br><br></h6>
+                            <div class="card-text"> 
+									<div class="selectopt">
+								
+										<select id="nutlogs1" onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Peanut">Peanut</option>
+											<option value="Cashew">Cashew</option>
+										</select>
+							</div>								
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Nut Logs" data-s="1 lb. box" data-price="1599" data-id="35">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+				 <div class="col-sm-4">
+                    <div class="card bdr">
+							<img src="images/hotfudge.png" class="img-fluid"> 
+						<div class="card-block">
+							 <h5 class="card-title">Fudge or Caramel Sauce</h5>
+							 <h6 class="card-subtitle text-muted small">$8.99 per pound<br><br></h6>
+                            <div class="card-text">
+									<div class="selectopt">
+										<select id="pclusters1"  onchange="setFlavor(this)">
+											<option value="">--What's your flavor?--</option>
+											<option value="Fudge">Fudge</option>
+											<option value="Caramel">Caramel</option>
+										</select>							 
+							 </div>							
+							<a href="#" class="card-link productItem btn btn-danger" data-name="Fudge Sauce" data-s="1 lb. box" data-price="899" data-id="36">Add to Cart</a> </div>						
+						</div>
+                    </div>
+                </div>
+            </div>		
+			
+		
+    </div>
+	<br><br><br><br>
+	
+	
+ <footer>
+  			<div class="footerlogo"><img src="images/footerlogo.png" /></div>
+  			<nav class="footer-nav">            
+            	<ul>
+         			<li><a href="index.html">Home <span> | </span></a></li>
+            		<li><a href="homemadecandies.html">Homemade Candies <span> | </span></a></li>
+            		<li><a href="oldetymecandies.html">Olde-Tyme Candies <span> | </span></a></li>
+                    <li><a href="history.html">History<span> | </span></a></li>
+            		<li><a href="specialevents.html">Special Events <span> | </span></a></li>
+            		<li><a href="contact.html">Contact Us</a></li>
+		 		</ul>               
+            </nav>
+             <div class="address"><p>Tremblay's Sweet Shop - 10569 Main Street, Hayward, WI 54843 <span> | </span>Phone - 715-634-2785</p></div>
+  
+  			 <div class="email-link"><p>Website by<a href="mailto: mtpittner@gmail.com"> mtpittner@gmail.com</a>. &copy; 2017 - 2018 - Tremblay's Sweet Shop. All rights reserved.</p></div>
+        
+	</footer> 
+    <!-- Modals -->
+    <div class="modal fade" id="cart" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Shopping Cart</h4></div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead class="thead-inverse">
+                            <tr>
+								<th>Remove</th>
+                                <th>Qty</th>
+                                <th>Item Name</th>
+                                <th>Cost</th>
+                                <th class="text-xs-right">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="output"> </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Continue Shopping</button><a href="checkout.html" class="btn btn-primary">Proceed to checkout</a></div>
+            </div>
+        </div>
+    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script>
+        var shopcart = [];
+        $(document).ready(function () {
+            outputCart();
+			
+			$('#output').on('click','.remove-item',function(){
+				var itemToDelete = $('.remove-item').index(this);
+				shopcart.splice(itemToDelete,1);
+				sessionStorage["sca"] = JSON.stringify(shopcart);
+				outputCart();
+			})
+			
+            $(".productItem").click(function (e) {
+                e.preventDefault();
+                var iteminfo = $(this.dataset)[0];
+                iteminfo.qty = 1;
+                var itemincart = false;
+                $.each(shopcart, function (index, value) {
+                    //console.log(index + '  ' + value.id);
+                    if (value.id == iteminfo.id && value.flavor ==  iteminfo.flavor) {
+                        value.qty = parseInt(value.qty) + parseInt(iteminfo.qty);
+                        itemincart = true;
+                    }
+                })
+                if (!itemincart) {
+                    shopcart.push(iteminfo);
+                }
+                sessionStorage["sca"] = JSON.stringify(shopcart);
+                outputCart();
+                ///
+            })
+
+            function outputCart() {
+                if (sessionStorage["sca"] != null) {
+                    shopcart = JSON.parse(sessionStorage["sca"].toString());
+                    console.log(sessionStorage["sca"]);
+                    $('#checkoutdiv').show();
+                }
+                var holderHTML = '';
+                var total = 0;
+                var itemCnt = 0;
+                $.each(shopcart, function (index, value) {
+                    console.log(value.flavor);
+                    var stotal = value.qty * value.price;
+                    total += stotal;
+                    itemCnt += parseInt(value.qty);
+                    if((typeof value.flavor) !== 'undefined'){
+                    	holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td>' + value.qty + '</td><td>#' + value.id + ' ' + value.name + ' - ' + value.flavor + '(' + value.s + ')</td><td> ' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td></tr>';
+                    }
+                    else{
+                    	holderHTML += '<tr><td><span class="btn btn-danger remove-item">x</span></td><td>' + value.qty + '</td><td>#' + value.id + ' ' + value.name +  '(' + value.s + ')</td><td> ' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td></tr>';
+                    }
+                })
+                holderHTML += '<tr><td colspan="4" class="text-xs-right">Total</td><td class="text-xs-right">' + formatMoney(total) + '</td></tr>';
+                $('#output').html(holderHTML);
+                $('.total').html(formatMoney(total));
+                $('.items').html(itemCnt);
+            }
+
+            function formatMoney(n) {
+                return '$' + (n / 100).toFixed(2);
+            }
+        })
+
+
+            function setFlavor(selectObject){
+            	var value = selectObject.value; 
+				selectObject.parentNode.nextElementSibling.setAttribute('data-flavor',value)
+            }
+    </script>
+</body>
+
+</html>
+ 

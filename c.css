@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+padding: 0;
+margin: 0;
+}
+
+#c_wrapper {
+	background-color: #D8D8D8;
+	height: 900px;
+	width: 960px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+#c_text1 {
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	float: left;
+	height: 450px;
+	width: 375px;
+	position: relative;
+	font-size: 20px;
+	text-align: left;
+	line-height: 30px;
+	left: 100px;
+	top: 75px;
+	clear: left;
+	border-right-width: 3px;
+	border-right-style: outset;
+	border-right-color: #333;
+	letter-spacing: -1pt;
+}
+.larger_redtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	color: #960509;
+}
+
+
+#c_text2 {
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	float: left;
+	height: 200px;
+	width: 400px;
+	position: relative;
+	left: 75px;
+	top: 500px;
+	font-size: 28px;
+	text-align: left;
+}
+
+#c_contactTremblays {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	display: block;
+	height: 50px;
+	width: 300px;
+	position: relative;
+	float: left;
+	background-position: center center;
+	left: 365px;
+	top: 50px;
+}
+
+#c_google {
+	display: block;
+	float: left;
+	height: 300px;
+	width: 960px;
+	position: relative;
+	top: 100px;
+}
+#c_candymakerpic {
+	display: block;
+	float: left;
+	height: 450px;
+	width: 350px;
+	position: relative;
+	top: 75px;
+	left: 125px;
+	
+}
+
+
+
+#c_footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-image: url(images/footerbackbrg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 60px;
+	width: 960px;
+	position: relative;
+	text-align: center;
+	float: left;
+	top: 200px;
+}
+#c_design_footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	background-color: #D8D8D8;
+	display: block;
+	float: left;
+	height: 15px;
+	width: 960px;
+	position: relative;
+	top: 200px;
+	text-align: center;
+}

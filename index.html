@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+
+<meta name="description" content="Located in Hayward, Wisconsin...Home of the original homemade fudge and the world famous turtles. We offer a large selection of both homemade and olde time favorites, located in Hayward, Wisconsin. " />  
+<meta name="keywords" content="original, famous, selection, candy, homemade, homemade candies, Tremblay's, Hayward, Hayward WI, best candy, fudge, taffy, brittle, cashew, world, famous turtles, turtles, caramel, vanilla, dark, chocolate, chocolate, peanut, butter, wrapped, ">
+<title>Welcome to Tremblay's Sweet Shop</title>
+
+<meta name="viewport" content="width=device-width">
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+			//Toggle for width display
+			var showWidth = 1;
+			
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();					
+					});				
+				});			
+			}			
+</script>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/tremblaysbackground2.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+
+
+
+
+</head>
+
+
+<body>
+<div id="output_width"></div>
+
+<div id="pagecontainer">
+	<header class="mainheader">   
+	  <a href="index.html"><img id="logo" src="images/logo.png" alt="Tremblay's Sweet Shop logo" /></a> 
+       <div id="callUs"><p>Call us today to place an order! <br> 715-634-2785 or  1-800 40-FUDGE  <br> Mail orders are shipped promptly. </p></div>  
+	   
+      <nav> 
+		<label for="show-menu" class="show-menu"><img src="images/menu-icon.png" alt="Show Menu button" /></label>
+		<input type="checkbox" id="show-menu" name="button">
+			<ul id="menu">
+				<li><a class="active" href="index.html">home</a></li>
+				<li><a href="homemadecandies.html">homemade candies</a></li>
+				<li><a href="oldetymecandies.html">olde-tyme candies</a></li>
+				<li><a href="ourstory.html">our story</a></li>
+				<li><a href="specialevents.html">special events</a></li>
+				<li><a href="contact.html">contact us</a></li>
+			</ul>
+      </nav>   
+        
+   </header>
+
+  
+  <!--Slideshow -->
+	<section id="slideshow">
+  		<ul class="rslides">
+ 			 <li><img src="images/img1.png" alt=""></li>
+  			 <li><img src="images/img2.png" alt=""></li>
+ 			 <li><img src="images/img3.png" alt=""></li>
+			 <li><img src="images/img4.png" alt=""></li>
+  			 <li><img src="images/img6.png" alt=""></li>
+  			 <li><img src="images/img5.png" alt=""></li>
+  			 <li><img src="images/img11.png" alt=""></li>
+  			 <li><img src="images/img9.png" alt=""></li>
+  			 <li><img src="images/img10.png" alt=""></li>
+		</ul>
+
+ 		<script> 
+ 			 $(function() {
+    			$(".rslides").responsiveSlides({
+					auto: true,  
+					speed: 500,
+					timeout: 4000,    
+					pause: false, 
+				});
+  			}); 
+
+		</script>
+	</section>
+
+<div id="content">
+ 
+  <section class="candylinks">
+  		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="homemadecandies.html#afudge">homemade fudge</a></div>
+					 <a href="homemadecandies.html#afudge"><img src="images/chocofudge.png" alt="Homemade Fudge"></a>							
+			</div> <!-- end of gallery div -->
+	    </div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="homemadecandies.html#aturtles">world famous turtles</a></div>
+					<a href="homemadecandies.html#aturtles"><img src="images/turtles.png" alt="World Famous Turtles"></a>						
+			</div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="homemadecandies.html#adipped">handdipped chocolates</a></div>
+					<a href="homemadecandies.html#adipped"><img src="images/chocolateballs.png" alt="Handdipped Chocolates"></a>				
+				</div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="oldetymecandies.html#ajellies">jelly bellies</a></div>
+					<a href="oldetymecandies.html#ajellies"><img src="images/jellybellies2.png" alt="Jelly Bellies"></a>						
+			</div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="homemadecandies.html#abrittle">brittle</a></div>
+					<a href="homemadecandies.html#abrittle"><img src="images/brittle.png" alt="Brittle"></a>							
+			   </div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="homemadecandies.html#aabark">almond bark</a></div>
+					<a href="homemadecandies.html#aabark"><img src="images/almondbark.png" alt="Almond Bark"></a>						
+			</div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="oldetymecandies.html#ataffy">saltwater taffy</a></div>
+					 <a href="oldetymecandies.html#ataffy"><img src="images/taffy.png" alt="Saltwater Taffy"></a>				
+			</div> <!-- end of gallery div -->
+		</div> <!-- end of responsive div -->
+					
+		<div class="responsive">
+			<div class="gallery">
+				<div class="desc"><a href="oldetymecandies.html#awrapped">hard candies</a></div>
+					<a href="oldetymecandies.html#awrapped"><img src="images/hardcandy.png" alt="Hard Candies"></a>						
+			</div> <!-- end of gallery div -->						
+		</div> <!-- end of responsive div -->  
+  </section>
+  
+  		<section class="videolink">
+  			<div class="video-wrapper">
+			  <div id="smallvidscreen"><p>(Click on the video link below <strong>&darr;</strong>). </p></div> 
+            	<a href="https://www.youtube.com/watch?v=73pbb337YsA"><img src="images/haywardsign.png" /></a> 
+                <div class="vidtext-wrapper">          
+    				<h5>Here's a little something to show you how just how fun Hayward is...Please click to watch the video</h5>
+           	   </div>   <!--end VIDTEXT-WRAPPER -->         
+            </div> <!--end VIDEO-WRAPPER div -->
+              		
+    		<div class="vidtext-wrapper2">
+            	<div class="vidtext">
+            		<h5>This video was the courtesy of the Hayward Chanber of Commerce &amp; James Netz Photography<br>
+      				Paid for by the  Hayward Chamber of Commerce &amp; Hayward Lakes Visitor &amp; Convention Bureau<br>
+      				Photography by James Netz Photography of Hayward / 
+     			 	Music by Justin Timberlake - Can't Stop This Feeling<br></h5>
+                </div> <!--end of vidtext-wrapper2 -->
+			</div> <!--end of vidtext-wrapper div -->  	
+ 		</section>
+  
+  		<section class="call">
+				<div class="calltext"><p>Call us today at 715-634-2785 or 1-800-40-FUDGE to place an order! Mail orders are shipped promply</p></div>
+  				<div class="callUs"><img src="images/callUs.png" alt="Call us today at 715-634-2785 or 1-800 40-FUDGE to place an order! Mail orders are shipped promptly." /></div>
+  		</section>
+  
+  		<section class="sweetest-place">
+  			<div class="sweetest2"><img src="images/sweetestplace.png" alt"Tremblay's, the Sweetest Place This Side of Heaven" /></div>
+  		</section>
+   
+    
+  </div> <!--end CONTENT div -->   
+  
+   <footer>
+  			<div class="footerlogo"><img src="images/footerlogo.png" /></div>
+  			<nav class="footer-nav">            
+            	<ul>
+         			<li><a href="index.html">Home <span> | </span></a></li>
+            		<li><a href="homemadecandies.html">Homemade Candies <span> | </span></a></li>
+            		<li><a href="oldetymecandies.html">Olde-Tyme Candies <span> | </span></a></li>
+                    <li><a href="history.html">History<span> | </span></a></li>
+            		<li><a href="specialevents.html">Special Events <span> | </span></a></li>
+            		<li><a href="contactus.html">Contact Us</a></li>
+		 		</ul>               
+            </nav>
+             <div class="address"><p>Tremblay's Sweet Shop - 10569 Main Street, Hayward, WI 54843 <span> | </span>Phone - 715-634-2785</p></div>
+  
+  			 <div class="email-link"><p>Website by<a href="mailto: mtpittner@gmail.com"> mtpittner@gmail.com</a>. &copy; 2017 - 2018 - Tremblay's Sweet Shop. All rights reserved.</p></div>
+        
+	</footer> 
+
+    
+</div> <!--end CONTAINER div -->
+
+    
+
+</body>
+</html>

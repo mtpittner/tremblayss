@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Tremblays Sweet Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main12.css">
+	
+	
+	
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+			//Toggle for width display
+			var showWidth = 1;
+			
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();					
+					});				
+				});			
+			}			
+</script>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/tremblaysbackground2.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+
+
+</head>
+
+
+<body>
+<div id="output_width"></div>
+
+
+	<header class="mainnav">
+	
+	<img id="logo" src="images/logo.png" alt="Tremblay's Sweet Shop logo" /> 
+      <div id="callUs"><p>Call us today to place an order! <br> 715-634-2785 or  1-800 40-FUDGE  <br> Mail orders are shipped promptly. </p></div>  
+	   
+		<label for="show-menu" class="show-menu">Show Menu</label>
+		<input type="checkbox" id="show-menu" role="button">
+			<ul id="menu">
+				<li><a href="#">home</a></li>
+				<li><a href="#">homemade candes</a></li>			
+				<li><a href="#">olde-tyme candies</a></li>
+				<li><a href="#">history</a></li>
+				<li><a href="#">special events</a></li>
+				<li><a href="#">contact us</a></li>
+			</ul>
+	</header>
+	
+	<div id="container">
+		<!--Slideshow -->
+	<section id="slideshow">
+  		<ul class="rslides">
+ 			 <li><img src="images/img1.png" alt=""></li>
+  			 <li><img src="images/img2.png" alt=""></li>
+ 			 <li><img src="images/img3.png" alt=""></li>
+  			 <li><img src="images/img6.png" alt=""></li>
+  			 <li><img src="images/img5.png" alt=""></li>
+  			 <li><img src="images/img11.png" alt=""></li>
+  			 <li><img src="images/img9.png" alt=""></li>
+  			 <li><img src="images/img10.png" alt=""></li>
+		</ul>
+
+ 		<script> 
+ 			 $(function() {
+    			$(".rslides").responsiveSlides({
+					auto: true,  
+					speed: 500,
+					timeout: 4000,    
+					pause: false, 
+				});
+  			}); 
+
+		</script>
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	</div> <!-- end CONTAINER div -->
+	
+</body>
+</html>
