@@ -1,0 +1,199 @@
+/*Strip the ul of padding and list styling*/
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+
+body {	
+	font-size:85%;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #666666;
+	line-height:1.7em;
+	text-align:left;
+}
+
+a{
+	color:#efe2cf;
+	text-decoration:none;
+	cursor:pointer;	
+	-webkit-transform: rotate(0);
+}
+
+a:hover {
+	color:#666666;
+}
+
+a img {-webkit-backface-visibility: hidden;}
+
+.clr{
+	clear:both;
+}
+
+#output_width{
+	background:#FFF;	
+}
+
+
+
+#container {
+	background:#d8d8d8 url(../images/sos.png);
+	width: 80%;
+	height:80%;
+	margin:0 auto;
+	clear:both;
+	overflow:hidden;
+}
+
+ #logo {
+	width:12.5%;
+	display:block;
+	margin:5px 0 0 5px;
+	padding-bottom:5px;
+	position:absolute;
+	z-index:10;
+	transition:width 2s;
+}
+#logo img{
+
+}
+
+.mainnav #callUs{
+	font-size:80%;
+	font-weight:bold;
+	color:#efe2cf;
+	line-height:1.5em;
+	margin:10px 10px 90px 0;
+	float:right;
+}
+
+
+.mainnav {
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+	width:100%;
+	height: 180px;
+}
+
+.mainnav ul {
+    list-style-type:none;
+	width:100%;
+	text-transform:uppercase;
+	font-weight:bold;
+    margin:125px 10px 0 150px;
+    padding:0;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+.mainnav li {
+    display:inline-block;
+    float: none;
+    margin-right: 1px;
+}
+
+/*Style for menu links*/
+.mainnav li a {
+    display:block;
+    color: #efe2cf;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+.mainnav li:hover a {
+    border-bottom:#efe2cf solid 3px;
+	font-weight:bold;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/* SLIDES */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin:0 auto 25px auto;
+  border:	#000000 solid 2px;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin:0 auto;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  margin:0 auto;
+  }
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+	margin:0 auto;
+  }
+
+#content{
+	width:100%;
+	float:left;
+}
+
+
+
+
+/*Responsive Styles*/
+@media screen and (max-width : 800px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+	
+	 /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}

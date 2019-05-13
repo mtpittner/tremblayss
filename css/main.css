@@ -1,0 +1,2025 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+html, body{
+height:100%;
+/* overflow-x:hidden; */
+}
+
+body {	
+	font-size:100%;
+	max-width:1200px;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #666666;
+	line-height:1.7em;
+	margin:0 auto;
+	text-align:left;
+}
+
+a{
+	color:#efe2cf;
+	text-decoration:none;
+	cursor:pointer;	
+	-webkit-transform: rotate(0);
+}
+
+/* a:hover {
+	color:#666666;
+} */
+
+a img {-webkit-backface-visibility: hidden;}
+
+.clr{
+	clear:both;
+}
+
+#output_width{
+	background:#FFF;	
+}
+
+
+
+#pagecontainer {
+	background:#d8d8d8 url(../images/sos.png);
+	width: 85%;
+	margin:0 auto;
+	clear:both;
+	position:relative;
+	min-height:100%;
+	overflow:hidden;
+}
+
+.mainheader #logo {
+	/* width:10%; */
+	display:block;
+	margin:5px 0 0 5px;
+	padding-bottom:5px;
+	position:absolute;
+	z-index:10;
+	transition:width 2s;
+}
+
+
+
+.mainheader {
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+	width:100%;
+	height: 180px;
+}
+
+
+/* RESPONSIVE Navigation*/
+
+.mainheader nav {
+	clear:both;
+	text-align:center;
+	margin:0 auto;
+	width:100%;
+}
+
+.mainheader nav ul {
+	list-style:none;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	padding:0;
+	width:100%;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:inline-block;
+	z-index:1000;
+}
+
+/* Create a horizontal list with spacing*/
+.mainheader nav li{
+	display:inline-block;
+	float: none;
+	margin-right:30px;
+}
+
+/* Style for menu links*/
+.main-header nav li a {
+	color:#efe2cf;
+	display: block;	
+	min-width:140px;
+	height:35px;
+	text-align:left;
+	padding-right:10px;
+	padding-left:10px;
+	margin-bottom:-3px;
+	text-decoration:none;
+}
+
+.mainheader nav li:hover a, .mainheader nav li a.active{
+	border-bottom:#efe2cf solid 3px;
+	font-weight:bold;
+
+}
+
+.mainheader #callUs{
+	font-size:70%;
+	font-weight:bold;
+	color:#efe2cf;
+	line-height:1.4em;
+	margin:10px 10px 95px 0;
+	float:right;
+	text-align:right;
+}
+
+
+/* Style 'show-menu' label button and hide it by default*/
+.show-menu {
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+	/* background-color:#a5070a; */
+	color:#efe2cf;
+	display:none;	
+	
+}
+
+/* Hide checkbox */
+input[type=checkbox] {
+	display:none;
+}
+
+
+/* SLIDES */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin:0 auto 25px auto;
+  border:	#000000 solid 2px;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin:0 auto;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  margin:0 auto;
+  }
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+	margin:0 auto;
+  }
+
+#content{
+	width:100%;
+	float:left;
+}
+
+
+
+/* CANDY PICTURE LINKS IN MIDDLE OF INDEX PAGE */
+
+#content section.candylinks {
+	width:85%;
+	margin: 0 auto;
+	padding:5px 20px;
+	margin-top:20px;
+}
+
+div.gallery {
+	margin:5px;	
+	float:left;
+	overflow:hidden;
+	
+}
+
+.gallery a {
+	color:#960509;
+}
+
+.gallery a.img {
+	color:#960509;
+	max-height:100px;
+}
+
+div.gallery:hover {
+	font-weight:bold
+}
+
+div.gallery img {
+	width:100%;
+	height:auto;
+	border:1px solid #333;
+	/*-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;*/
+	transition: all .2s ease-in-out; 
+
+}
+
+div.gallery img:hover {
+	width:100%;
+	height:auto;
+	/*border:2px solid #333;*/
+	/*-webkit-transform: scale(1.3);
+	transform: scale(1.3);*/
+	transform: scale(1.1);
+}
+
+div.desc {
+	color:#666666;
+	padding:2px;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:75%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width:25%;
+}
+
+
+/* VIDEO LINK - INDEX PAGE */
+
+#smallvidscreen {
+	display:none;
+	font-size:70%;
+	text-align:center;
+}
+
+#content section.videolink .video-wrapper{
+	margin:30px auto 0 auto;
+	float: left;
+	height: auto;
+	padding-top:20px;
+	width: 100%;
+}
+
+#content section.videolink .video-wrapper img{
+	width:100%;
+	margin:0 auto;	
+}
+
+#content section.videolink .video-wrapper .vidtext-wrapper {
+	width:100%;
+	position:relative;
+	margin-top: -36%;
+}
+
+#content section.videolink .video-wrapper .vidtext-wrapper h5 {
+	text-align: center;
+	color: #ffffff;
+	font-size:75%;
+	margin:0 auto;
+}
+
+#content section.videolink .vidtext-wrapper2 {
+	margin:0 auto 25px auto;
+	float:left;
+	height:auto;
+	width: 100%;	
+}
+
+#content section.videolink .vidtext-wrapper2 .vidtext h5 {
+	text-align: center;
+	color: #333;
+	font-size:70%;
+	padding:10px;
+	line-height:1.5em;	
+	margin-top:33%;
+}
+
+#content section.call .callUs {
+	margin:0 auto 30px auto;
+	height: auto;
+	width: 60%;
+	float:right;
+}
+
+#content section.call .callUs img{
+	width:%;
+	float:right;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;	
+}
+
+#content section.call .calltext p{
+	display:none;
+	float:right;
+	color:#960509;
+	margin:15px;
+	padding:10px;
+	font-size:80%;
+	font-weight:bold;
+	text-align:center;
+	line-height:1.5;
+}
+
+#content section.call .allergy {
+	width:40%;
+	float:left;
+	border:1px solid #333;
+}
+
+#content section.call .allergy img{
+	width: 40%;
+}
+
+
+#content section.sweetest-place .sweetest2 {
+	height: auto;
+	width: 100%;
+}
+
+#content section.sweetest-place .sweetest2 img  {
+	width:60%;	
+	display: block;
+	margin:0 auto 100px auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************************ Homemade Candies CSS ****************************/
+
+
+#content section.sectionlinks{
+	width:90%;
+	margin: 30px auto;
+	padding:5px 20px;
+}
+
+.hccandylabel {
+	font-size: 1.70em;
+	font-weight: bold;
+	text-align:center;
+	display: block;
+	width:100%;
+	float: left;
+	margin:40px auto 10px auto;
+	color: #A20608;
+	letter-spacing: 0pt;
+}
+
+
+span.prices-marked {
+	font-size: 55%;
+	-webkit-text-stroke: 0px;
+	float: left;
+	height: 30px;
+	width: 65px;
+	position: relative;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1em;
+	border: 0.5px outset #960509;
+	left: 150px;
+	top: -5px;
+	letter-spacing: 0pt;	
+}
+
+
+
+div.hcgallery {
+	margin:15px auto 0 auto;
+	float:none;
+	overflow:hidden;
+	border:2px #333 solid;
+	/* transition: all .2s ease-in-out; */	
+}
+
+div.hcgallery:hover {
+	/* box-shadow:4px 4px 5px grey; */
+	-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+}
+
+.hcgallery a {
+	color:#333;
+}
+
+.hcgallery a.img {
+	color:#333;
+	max-height:100px;
+}
+
+
+
+div.hcgallery img {
+	width:100%;
+	height:auto;
+	border:1px #333 solid;
+}
+
+
+div.hcgallery img:hover {
+	width:100%;
+	height:auto;
+}
+
+
+div.hcdesc {
+	color:#33333;
+	padding:2px;
+	font-weight:bold;
+	text-align:center;
+	font-size:90%;
+	/* margin-top:-10px; */
+}
+
+div.hcvariety {
+	color:#33333;
+	font-size:80%;
+	padding:1px 1px 5px 1px;
+	line-height:1.2em;
+	text-align:center;
+	margin-top:-5px;
+}
+
+span.sugarfree {
+	font-size: 75%;
+	color:red;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1em;
+}
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+.hcresponsive {
+	padding: 0 6px;
+	float: left;
+	width:33.33%;
+/* 	border:1px #333 solid; */
+}
+
+#content section.call .callUs .space {
+	padding:50px 0 80px 30px; 
+}
+
+/************************ END Homemade Candies CSS ****************************/
+
+
+
+/************************ Olde Tyme Candies CSS ****************************/
+
+#smallvidscreen {
+	display:none;
+	font-size:70%;
+	text-align:center;
+}
+
+#content section.otsections{
+	width:80%;
+	margin:15px auto;
+	top:15px;
+}
+
+.ot-links {
+	width:100%;
+	margin:0 auto;
+}
+
+ .ot-links .ot-pics {
+	width: 70%;
+	padding-top:15px;
+	margin:0 auto;
+}
+
+div.ot-links .ot-pics img  {
+	width:100%;	
+	display: block;
+	margin:15px auto;
+	border:2px #333 solid;	
+}
+
+div.ot-links .ot-pics img:hover {
+	-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+}
+
+.ot-links, .ot-pics a {
+	color: #333;
+}
+div.otdesc {
+	color:#333333;
+	margin:0 auto;
+	padding:5px;
+	width:80%;
+	font-weight:bold;
+	text-align:center;
+	font-size:100%;
+	/* border:2px #333 solid; */
+}
+
+/************************ END Olde Tyme Candies CSS ****************************/
+
+
+/************************ Our Story CSS ****************************/
+
+
+.history{
+	width:80%;
+	margin:0 auto;
+	top:5px;	
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+	background:#d8d8d8 url(../images/sos.png);
+    width: 100%;
+    padding: 20px 10px;
+	/* border:1px #333 solid; */
+}
+
+div.gallery3 {
+    margin: 5px;
+   /*  border: 1px solid #ccc; */
+    float: left;
+    width: 30%;
+}
+
+
+div.gallery3 img {
+    width: 100%;
+    height: auto;
+}
+
+
+.hback {
+	float:left;
+		-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		border:2px #333 solid;
+		width:80%;
+}
+
+.hbackright {
+	float:right;
+	-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	margin-top:-70px;
+	width:80%;
+	border:2px #333 solid;
+}
+
+.hbackleft {
+	float:right;
+	-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+	margin-top:-100px;
+	width:80%;
+	border:2px #333 solid;
+}
+
+caption {
+	text-align:right;
+	font-size:75%;
+}
+
+
+.movetext {
+	margin-top:40px;
+}
+
+.movetextright {
+	margin:40px 0 0 80px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/************************ END History CSS ****************************/
+
+
+/************************ Special Events CSS ****************************/
+
+#smallvidscreen {
+	display:none;
+	font-size:70%;
+	text-align:center;
+}
+
+.specialevents{
+	width:85%;
+	margin:0 auto;
+	top:5px;	
+}
+
+/* Create two equal columns that floats next to each other */
+.secolumn {
+    float: left;
+	background:#d8d8d8 url(../images/sos.png);
+    width: 100%;
+    padding: 20px 25px;
+	text-align:center;
+	/* border:1px #333 solid; */
+}
+
+.seback {
+	float:right;
+		-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		border:2px #333 solid;
+		width:90%;
+}
+
+.row2 {
+	width:50%;
+	margin:0 auto;
+	padding-top: 20px;
+}
+
+.row2 img{
+	width:100%;
+	margin:0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span.red {
+	color:#960509;
+	font-weight:bold;
+}
+
+div.gallery2 {
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 100%;
+}
+
+div.gallery2:hover {
+/*     border: 1px solid #777; */
+}
+
+div.gallery2 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc2 {
+    padding: 15px;
+    text-align: center;
+}
+
+/************************ END Special Events CSS ****************************/
+
+/************************ Contact Us CSS ****************************/
+
+#smallvidscreen {
+	display:none;
+	font-size:70%;
+	text-align:center;
+}
+
+.contactus{
+	width:85%;
+	margin:0 auto;
+	top:5px;	
+}
+
+/* Create two equal columns that floats next to each other */
+.ccolumn {
+    float: left;
+	background:#d8d8d8 url(../images/sos.png);
+    width: 50%;
+    padding: 20px 25px;
+	font-weight:bold;
+	font-size:95%;
+	line-height:1.5
+	/* border:1px #333 solid; */
+}
+
+.textdown{
+	margin-top:50px;
+	padding-left:25px;
+}
+
+.cback {
+		-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		border:2px #333 solid;
+		width:90%;
+}
+
+.borderon {
+	border-left:3px #333 solid;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span.red {
+	color:#960509;
+	font-weight:bold;
+}
+
+
+/************************ END Contact Us CSS ****************************/
+
+
+/************************ TaffyTown Taffy CSS ****************************/
+
+
+.taffytown{
+	width:80%;
+	margin:0 auto;
+	top:5px;	
+}
+
+section.taffypics {
+	width:40%;
+/* 	border:3px solid #333; */
+	float:left;
+	margin-top:10px;
+}
+
+section.taffypics img {
+	width:85%;
+	border:2px solid #333;
+		-webkit-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		-moz-box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+		box-shadow: 6px 9px 16px -8px rgba(0,0,0,0.65);
+}
+
+section.taffylist h4 {
+	margin-left:
+}
+
+
+section.taffylist ul {
+ width:60%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* border-top: 1px solid #ccc; */
+  margin-top:5px;
+}
+
+section.taffylist ul li {
+  line-height: 1.5em;
+/*   border-bottom: 1px solid #ccc; */
+  float: left;
+  display: inline;
+}
+
+#double li {
+  width: 50%;
+}
+
+
+.ttlogo {
+	width: 25%;
+	position: relative;
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+.ttlogo img{
+	width:100%;
+}
+
+.ttlogo a{
+	color: #960509;
+}
+	
+	
+
+
+#taffy_bottomtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	float: left;
+	height: 20px;
+	width: 225px;
+	position: relative;
+	top: 315px;
+	left: 400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span.red {
+	color:#960509;
+	font-weight:bold;
+}
+
+
+/************************ END TaffyTown Taffy CSS ****************************/
+
+
+
+
+
+
+/************************ Shopping Cart CSS ****************************/
+#checkoutdiv{
+	padding 20px;
+}
+
+	
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/************************ END TaffyTown Taffy CSS ****************************/
+footer  {
+	background:url(../images/background.png);
+	background-repeat: repeat;
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+footer .footerlogo {
+	position:absolute;
+	float:left;
+	margin:-20px 10px -2px 7%;
+	z-index:10;
+}
+
+footer .footerlogo img{
+	width:100%;	
+}
+
+footer .footer-nav {
+	width:100%;	
+	text-align:center;	
+}
+
+footer .footer-nav ul {
+	list-style:none;
+	margin-top:3px;
+	padding:0;
+}
+
+footer .footer-nav ul li {
+	color:#efe2cf;
+	display:inline;
+	float:none;
+	letter-spacing:1px;
+	font-size:70%;	
+}
+
+footer .footer-nav ul li a {
+	color: #efe2cf;	
+	display:inline-block;	
+}
+
+footer .footer-nav ul li span {
+	margin:0 10px;	
+	color: #efe2cf;
+}
+
+footer .address {
+	margin:-5px auto 0 auto;
+	float:left;
+	height:auto;
+	text-align:center;
+	width: 100%;	
+}
+
+footer .address p{
+	color: #efe2cf;	
+	text-align:center;
+	font-size:70%;
+	margin-top:-5px;
+}
+
+footer .email-link {
+	background:#d8d8d8 url(../images/sos.png);
+	display:block;
+	margin-top:20px;
+	float:left;
+	width:100%;
+	height:18px;
+	position:absolute;
+	z-index:1;
+	
+}
+
+footer .email-link p{
+	color:#333;
+	text-align:center;
+	font-size:65%;
+	margin-top:-6px;
+}
+
+footer .email-link a{
+	color: #960509;
+	font-size:100%;
+}
+
+#ccorder {
+	margin-left:20%;
+}
+
+
+
+
+
+/************************ Media Queries ****************************/
+
+/* Large Screens (Portrait and Landscape) Hi res laptops and desktops */
+
+@media screen and (min-width : 1118px) and (max-width : 1200px) {
+	
+	#content section.candylinks {
+		width:95%;
+	}
+	
+	div.desc {
+	font-size:75%;
+	}
+
+}
+
+@media screen and (min-width : 1025px) and (max-width : 1117px) {
+	
+	#content section.candylinks {
+		width:90%;
+	}
+	
+	div.desc {
+	font-size:67%;
+	}
+	
+	.hbackleft {
+		margin-top:-80px;
+	}
+
+	.hbackright {
+		margin-top:-80px;
+	}
+	
+	footer .footerlogo {
+		margin:-10px 10px -2px 6%;
+	}
+
+	footer .footer-nav ul li span {
+		margin:0 5px;	
+	}
+		
+	footer .footerlogo img{
+		width:90%;	
+	}
+	
+	#content section.call .callUs img{
+		width:55%;
+	}
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:65%;	
+	}
+
+
+}
+
+
+@media screen and (min-width : 961px) and (max-width : 1024px) {
+	.mainheader nav li{
+		margin-right:20px;
+		font-size: 85%;
+	}	
+	
+	.main-header nav li a {
+		color:#efe2cf;
+		display: block;	
+		min-width:130px;
+	}
+	
+	#content section.candylinks {
+		width:93%;
+	}
+	
+	div.desc {
+	font-size:64%;
+	}
+	
+	
+
+	footer .footerlogo {
+		margin:-10px 10px -2px 5%;
+	}
+
+	footer .footer-nav ul li span {
+		margin:0 5px;	
+	}
+		
+	footer .footerlogo img{
+		width:90%;	
+	}
+	
+	#content section.call .callUs img{
+		width:65%;
+	}
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:75%;	
+	}
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 960px){
+	/*Show menu when invisible checkbox is checked
+	http://jsfiddle.net/Kqscu/4/
+	*/
+	input[type=checkbox]:checked  ~ #menu{
+    display: block;
+	}
+	
+	/*Make dropdown links appear inline*/
+	.mainheader nav ul {
+		position: static;
+		display: none;
+		position:relative;
+		z-index:1001;
+	}
+	
+	/*Create vertical spacing*/
+	.mainheader nav li {
+		/* margin-bottom: 1px; */
+		background-image: url(../images/background.png);
+		height:35px;
+	}
+	
+	.main nav li a {
+		text-align:center;
+		
+	}
+	
+	/*Make all menu links full width*/
+	.mainheader nav ul li, .mainheader nav li a {
+		width: 100%;
+		text-align:center;
+	}
+	
+	/*Display 'show menu' link*/
+	.mainheader nav .show-menu {
+		display:block;
+	}
+	
+	#content section.videolink .video-wrapper .vidtext-wrapper h5 {
+		font-size:65%;
+	}
+	
+	#content section.videolink .vidtext-wrapper2 .vidtext h5 {
+		font-size:60%;
+		margin-top:31%;
+	}
+
+	
+	.responsive {
+		width:50%;
+	}
+	
+	div.hcgallery {
+	width:85%;
+	}
+	
+	.hcresponsive {
+		width:50%;
+	}
+	
+	span.prices-marked {
+	left: 50px;
+	
+	}
+	
+	.history{
+	width:85%;	
+	}
+	
+	.hbackleft {
+		margin-top:-20px;
+	}
+
+	.hbackright {
+		margin-top:-20px;
+	}
+
+	.specialevents{
+		width:85%;
+		margin:0 auto;
+		top:5px;	
+	}
+
+/* Create two equal columns that floats next to each other */
+	.secolumn {
+		float: left;
+		background:#d8d8d8 url(../images/sos.png);
+		width: 50%;
+		padding: 20px 25px;
+	/* border:1px #333 solid; */
+	}
+
+	.seback {
+		width:100%;
+	}
+
+	.row2 {
+		width:75%;
+	}
+
+	.row2 img{
+		width:100%;
+		margin:0 auto;
+	}
+
+	.contactus{
+		width:80%;
+	}
+
+/* Create two equal columns that floats next to each other */
+	.ccolumn {
+		width: 100%;
+		padding: 20px 25px;
+		font-size:95%;
+		text-align:center;
+	
+	/* border:1px #333 solid; */
+	}
+	
+	.ccolumn iframe {
+		margin-left: 15%;
+	
+	/* border:1px #333 solid; */
+	}
+
+	.textdown{
+		margin-top:50px;
+		padding-left:25px;
+	}
+
+	.borderon {
+		border-left:none;
+		border-top:2px #333 solid;
+	}
+	
+	.taffytown{
+	width:90%;
+	margin:0 auto;
+	top:5px;	
+}
+
+	
+	#content section.call .callUs img{
+		width:70%;
+	}
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:80%;	
+	}
+
+
+	footer .footerlogo {
+		display:none;
+	}
+	
+	footer .footer-nav ul {
+	/* 	margin-top:-3px; */
+	}
+
+	footer .footer-nav ul li span {
+		margin:0 3px;	
+	}
+	
+	footer .footer-nav ul li {
+		font-size:65%;	
+	}
+	
+	footer .address p{
+	font-size:65%;
+	margin-top:-10px;
+	}
+	
+
+}
+
+@media screen and (min-width : 641px) and (max-width : 767px){
+	
+	#pagecontainer {
+		width:90%;
+	}
+	/*Show menu when invisible checkbox is checked
+	http://jsfiddle.net/Kqscu/4/
+	*/
+	input[type=checkbox]:checked  ~ #menu{
+    display: block;
+	}
+	
+	/*Make dropdown links appear inline*/
+	.mainheader nav ul {
+		position: static;
+		display: none;
+		position:relative;
+		z-index:1001;
+	}
+	
+	/*Create vertical spacing*/
+	.mainheader nav li {
+		/* margin-bottom: 1px; */
+		background-image: url(../images/background.png);
+		height:35px;
+	}
+	
+	.main nav li a {
+		text-align:center;
+		
+	}
+	
+	/*Make all menu links full width*/
+	.mainheader nav ul li, .mainheader nav li a {
+		width: 100%;
+		text-align:center;
+	}
+	
+	/*Display 'show menu' link*/
+	.mainheader nav .show-menu {
+		display:block;
+	}
+	
+	#content section.videolink .video-wrapper .vidtext-wrapper h5 {
+		font-size:55%;
+		margin-top: -37%;
+	}
+	
+	#content section.videolink .vidtext-wrapper2 .vidtext h5 {
+		font-size:55%;
+		margin-top:33%;
+	}
+	
+	.history{
+	width:75%;
+	margin:0 auto;
+	}
+	
+	.hback {
+		float:none;
+	}
+	
+	.hbackleft {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+	}
+
+	.hbackright {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+		padding:0;
+	}
+	
+	  .column {
+        width: 100%;
+		margin:0 auto;
+		float:left;
+    }	
+		
+	.movetext {
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+
+	.movetextright {
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+	
+/* 	.specialevents {
+		width:80%;
+	} */
+	
+	/* Create two equal columns that floats next to each other */
+	.secolumn {
+		width: 100%;
+		/* border:2px solid #333; */
+		margin:0;
+		clear:both;
+		text-align:center;
+	}
+
+	.seback {
+		width:75%;	
+		margin-right:13%;
+	}
+	
+	.seback img {
+		width:100%;	
+		border:#fff 4px solid;
+		margin:0 auto;
+	}
+
+	.row2 {
+		width:65%;
+	}
+
+	.row2 img{
+		width:100%;
+		margin:0 auto;
+	}	
+	
+	.contactus{
+		width:80%;
+	}
+
+/* Create two equal columns that floats next to each other */
+	.ccolumn {
+		width: 100%;
+		padding: 20px 25px;
+		font-size:95%;
+		text-align:center;
+	
+	/* border:1px #333 solid; */
+	}
+	
+	.ccolumn iframe {
+		margin-left: 7%;
+	
+	/* border:1px #333 solid; */
+	}
+
+	.textdown{
+		margin-top:5%;
+		padding-left:5%;
+	}
+
+	.borderon {
+		border-left:none;
+		border-top:2px #333 solid;
+	}
+
+
+
+	
+	
+	.responsive {
+		width:50%;
+	}
+	
+	.hcresponsive {
+		width:50%;
+		margin:0 auto;
+	}
+	
+	.taffytown{
+	width:90%;
+	margin:0 auto;
+	top:5px;	
+	}
+	
+	#double li {
+		width: 100%;
+	}
+	
+	span.prices-marked {
+		left: 30px;	
+	}
+	
+	#content section.call .callUs img{
+		width:75%;
+	}
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:85%;	
+	}
+	
+
+	footer .footerlogo {
+		display:none;
+	}
+
+	footer .footer-nav ul li span {
+		margin:0 3px;	
+	}
+	
+	footer .footer-nav ul li {
+		font-size:65%;	
+	}
+	
+	footer .address p{
+	font-size:65%;
+	}
+
+}
+
+@media screen and (min-width : 481px) and (max-width : 640px){
+	
+	#pagecontainer {
+		width:90%;
+	}
+	/*Show menu when invisible checkbox is checked
+	http://jsfiddle.net/Kqscu/4/
+	*/
+	input[type=checkbox]:checked  ~ #menu{
+    display: block;
+	}
+	
+	/*Make dropdown links appear inline*/
+	.mainheader nav ul {
+		position: static;
+		display: none;
+		position:relative;
+		z-index:1001;
+	}
+	
+	/*Create vertical spacing*/
+	.mainheader nav li {
+		/* margin-bottom: 1px; */
+		background-image: url(../images/background.png);
+		height:35px;
+	}
+	
+	.main nav li a {
+		text-align:center;
+		
+	}
+	
+	/*Make all menu links full width*/
+	.mainheader nav ul li, .mainheader nav li a {
+		width: 100%;
+		text-align:center;
+	}
+	
+	/*Display 'show menu' link*/
+	.mainheader nav .show-menu {
+		display:block;
+	}
+	
+	#content section.candylinks {
+	width:70%;
+	margin: 0 auto;
+	padding:5px 20px;
+	margin-top:20px;
+	}
+	
+	#content section.videolink .video-wrapper .vidtext-wrapper h5 {
+		font-size:45%;
+		margin-top: -38%;
+	}
+	
+	#content section.videolink .vidtext-wrapper2 .vidtext h5 {
+		font-size:45%;
+		margin-top:31%;
+	}
+	
+	.responsive {
+		width:100%;
+	}
+	
+	.hccandylabel {
+	font-size: 1.4em;
+	}
+	
+	div.hcgallery {
+	width:75%;
+	}
+	
+	
+	.hcresponsive {
+		width:100%;
+		margin:0 auto;
+	}
+	
+	span.prices-marked {
+		display:none;
+	}
+	
+	
+	.specialevents{
+		width:85%;	
+	}
+
+/* Create two equal columns that floats next to each other */
+	.secolumn {
+		width: 100%;
+		padding: 10px 15px;
+		text-align:left;
+	/* border:1px #333 solid; */
+}
+
+	.seback {
+		float:none;
+		width:90%;
+		margin-left: 5%;
+	}
+	
+	.row2 {
+		width:75%;
+	}
+
+
+	
+	#content section.call .callUs img{
+		width:90%;
+	}
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:95%;	
+	}
+	
+	div.otdesc {
+		width:85%;
+		font-size:85%;
+	}
+
+	.history{
+	width:75%;
+	margin:0 auto;
+	}
+	
+	.hback {
+		float:none;
+	}
+	
+	.hbackleft {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+	}
+
+	.hbackright {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+		padding:0;
+	}
+	
+	  .column {
+        width: 100%;
+		margin:0 auto;
+		float:left;
+    }	
+		
+	.movetext {
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+
+	.movetextright {
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+	
+	.contactus{
+		width:80%;
+	}
+
+/* Create two equal columns that floats next to each other */
+	.ccolumn {
+		width: 100%;
+		padding: 20px 25px;
+		font-size:95%;
+		text-align:center;
+	
+	/* border:1px #333 solid; */
+	}
+	
+
+	.textdown{
+		margin-top:5%;
+		padding-left:5%;
+	}
+
+	.borderon {
+		border-left:none;
+		border-top:2px #333 solid;
+	}
+	
+	.taffytown{
+		width:90%;	
+	}
+	
+	section.taffypics {
+		width:85%;
+		/* border:2px solid #333; */
+		margin-left:7%;
+		padding:10px;
+	}
+	
+	section.taffypics img{
+		margin-left:7%;
+		margin-bottom:5px;
+	}
+	
+	.taffylist {
+		width:85%;
+		float:left;
+		text-align:centered;
+		/* border:2px solid #333; */
+		margin-left:7%;		
+	}
+	
+	
+	#double li {
+		width: 100%;
+	}
+	
+
+
+
+	
+
+	footer .footerlogo {
+		display:none;
+	}
+
+	footer .footer-nav ul li span {
+		margin:0 1px;	
+	}
+	
+	footer .footer-nav ul li {
+		font-size:55%;	
+	}
+	
+	footer  .address p{
+		font-size:55%;
+	}
+	
+	footer .email-link p{
+		font-size:50%;
+		margin-top:-4px;
+	}
+
+	footer .email-link a{
+		font-size:100%;
+	}
+
+}
+
+
+
+@media screen and (min-width : 289px) and (max-width : 480px){
+	
+	#pagecontainer {
+		width:100%;
+	}
+	
+	.mainheader {
+		height:160px;
+	}
+	
+	.mainheader #logo {
+	/* width:10%; */
+	margin:0 auto;
+	display:block;
+	margin:5px 0 0 5px;
+	padding-bottom:5px;
+	position:absolute;
+	z-index:10;
+	transition:width 2s;
+	}
+	
+	/*Show menu when invisible checkbox is checked
+	http://jsfiddle.net/Kqscu/4/
+	*/
+	input[type=checkbox]:checked  ~ #menu{
+    display: block;
+	}
+	
+	/*Make dropdown links appear inline*/
+	.mainheader nav ul {
+		position: static;
+		display: none;
+		position:relative;
+		z-index:1001;
+	}
+	
+	/*Create vertical spacing*/
+	.mainheader nav li {
+		/* margin-bottom: 1px; */
+		background-image: url(../images/background.png);
+		height:35px;
+	}
+	
+	.main nav li a {
+		text-align:center;
+		
+	}
+	
+	/*Make all menu links full width*/
+	.mainheader nav ul li, .mainheader nav li a {
+		width: 100%;
+		text-align:center;
+	}
+	
+	/*Display 'show menu' link*/
+	.mainheader nav .show-menu {
+		display:block;
+		float:right;
+		margin:-25px 10px 0 0;
+	}
+	
+	.mainheader #callUs{
+		opacity:0;
+	}
+	
+	#content section.candylinks {
+	width:85%;
+	margin: 0 auto;
+	padding:5px 20px;
+	margin-top:20px;
+	}
+	
+	#content section.videolink .video-wrapper .vidtext-wrapper h5 {
+		display:none;
+	}
+	
+	#content section.videolink .vidtext-wrapper2 .vidtext h5 {
+		font-size:65%;
+		margin-top:34%;
+	}
+	
+	div.hcgallery {
+	width:95%;
+	}
+	
+	.responsive {
+		width:100%;
+	}
+	
+	.hccandylabel {
+	font-size: 1.3em;
+	}
+	
+	div.hcgallery {
+	width:75%;
+	}
+	
+	
+	.hcresponsive {
+		width:100%;
+		margin:0 auto;
+	}
+	
+	span.prices-marked {
+		display:none;
+	}
+	
+	.specialevents{
+		width:85%;	
+	}
+
+/* Create two equal columns that floats next to each other */
+	.secolumn {
+		width: 100%;
+		padding: 10px 15px;
+		text-align:left;
+	/* border:1px #333 solid; */
+}
+
+	.seback {
+		float:none;
+		width:90%;
+		margin-left: 5%;
+	}
+	
+	.row2 {
+		width:80%;
+	}
+
+	
+	#smallvidscreen {
+	display: block;
+	font-weight:bold;
+	}
+	
+	#content section.call .callUs img{
+		display:none;
+	}
+	
+	#content section.call .calltext p{
+		display:block;
+	}
+
+	
+	#content section.sweetest-place .sweetest2 img  {
+		width:95%;	
+	}
+	
+	#content section.call .calltext .space {
+		padding:80px 0px 80px 0px;  
+	}
+	
+	 .ot-links .ot-pics {
+		width: 80%;
+		margin:0 auto;
+	}
+	
+	div.otdesc {
+		width:85%;
+		font-size:70%;
+		line-height:1.4em;
+	}
+	
+	.history{
+		width:80%;
+		margin:0 auto;
+	}
+	
+	.hback {
+		float:none;
+	}
+	
+	.hbackleft {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+	}
+
+	.hbackright {
+		margin-top:0px;
+		margin:0 auto;
+		float:none;
+		padding:0;
+	}
+	
+	  .column {
+        width: 100%;
+		margin:0 auto;
+		float:left;
+    }	
+		
+	.movetext {
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+
+	.movetextright {
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+	
+	.ccolumn {
+		width: 100%;
+		text-align:center;
+		margin:0 auto;
+	}
+	.column iframe{
+		margin-right:10%;
+	}
+	
+
+	.textdown{
+		margin-top:5%;
+		padding-left:5%;
+	}
+
+	.borderon {
+		border-left:none;
+		border-top:2px #333 solid;
+	}
+	
+	
+	.taffytown{
+		width:90%;	
+	}
+	
+	section.taffypics {
+		width:85%;
+		/* border:2px solid #333; */
+		margin-left:7%;
+		padding:10px;
+	}
+	
+	section.taffypics img{
+		margin-left:7%;
+		margin-bottom:5px;
+	}
+	
+	.taffylist {
+		width:85%;
+		float:left;
+		text-align:centered;
+		/* border:2px solid #333; */
+		margin-left:7%;		
+	}
+	
+	
+	#double li {
+		width: 100%;
+	}
+	
+	
+	
+	
+
+
+
+
+	
+	
+	footer {
+		height:70px;
+		width:100%;
+	}
+	
+
+	footer .footerlogo {
+		display:none;
+	}
+
+	footer .footer-nav ul li span {
+		display:none;	
+	}
+	
+	footer .footer-nav ul li {
+		display:none;
+	}
+	
+	footer .address p{
+		font-size:55%;
+		margin-top: 15px;
+		line-height:1.7em;
+	}
+	
+	footer .email-link {
+		margin-top: 50px;
+	}
+
+	
+	footer .email-link p{
+		font-size:50%;
+		margin-top:-4px;
+	}
+
+	footer .email-link a{
+		font-size:100%;
+	}
+
+}
+
+
+
+
+
